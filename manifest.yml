@@ -1,0 +1,4 @@
+---
+applications:
+- name: til-boston
+  buildpack: ruby_buildpack
