@@ -1,4 +1,4 @@
-channels = %w(vim development design consulting rails ruby testing bash git pcf
+channels = %w(vim development design consulting rails ruby testing bash git pcf gradle gulp
               html-css javascript angular sql devops internet java spring intellij security)
 
 channels.each do |channel|
