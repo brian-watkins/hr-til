@@ -14,11 +14,16 @@ This site was open-sourced as a window into our development process, as well as
 to allow people to experiment with the site on their own and contribute to the
 project.
 
-Today I Learned was ported to Elixir/Phoenix in 2017 ([source
-code](https://github.com/hashrocket/tilex)), and the Rails application is no
-longer in production as a Hashrocket project. We still plan to respond to
-issues and merge pull requests. Thanks to all of our
-[contributors](https://github.com/hashrocket/hr-til/graphs/contributors)!
+### Pivotal Boston Fork
+
+This fork of TIL serves the Pivotal Boston office.
+
+To add a new channel, first modify `db/seeds.rb`. Next, you can log into the database and insert a new channel like so:
+
+```
+$ RAILS_ENV=production DATABASE_URL=the_database_url rails c
+$ Channel.find_or_create_by!(name: 'my-new-channel')
+```
 
 ### Install
 

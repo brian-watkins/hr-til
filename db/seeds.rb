@@ -1,5 +1,6 @@
 channels = %w(vim development design consulting rails ruby testing bash git pcf gradle gulp
-              html-css javascript angular sql devops internet java spring intellij security)
+              html-css javascript angular sql devops internet java spring intellij security
+              iOS)
 
 channels.each do |channel|
   puts "Finding or creating channel: #{channel}"
