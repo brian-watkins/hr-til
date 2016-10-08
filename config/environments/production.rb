@@ -1,3 +1,11 @@
+require 'json'
+
+def hostname
+  return "localhost" unless ENV['VCAP_APPLICATION']
+
+  JSON.parse(ENV['VCAP_APPLICATION'])['uris'][0]
+end
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -85,4 +93,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_controller.default_url_options = {
+    host: hostname,
+    protocol: 'https://'
+  }
 end
