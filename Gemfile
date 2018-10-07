@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.4.4'
 
 gem 'rails', '~> 5.x'
 
 gem 'active_model_serializers'
-gem 'airbrake'
 gem 'authem'
 gem 'autoprefixer-rails'
 gem 'coffee-rails', '~> 4.1.0'
